@@ -23,7 +23,7 @@ p{
     font-size: 1rem;
     color: dimgray;
 }
-.flexible-conater{
+.flexible-conainer{
     display: flex;
     flex-wrap: nowrap;
     height: 500px;
@@ -66,6 +66,33 @@ button{
     padding-bottom: 5rem;
 }
 
+/* ------------nav part----------- */
+.nav-item{
+    height: 60px;
+    padding: 1.5rem 0;
+}
+nav ul {
+    list-style-type: none;
+    background-color: #fff;
+    height: 50px;
+
+}
+nav ul li {
+    float: left;
+    color: #111;
+    padding: 16px 30px;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
 /* ---------- mission section ---------- */
 #mission-section h1{
     color: #111111;
@@ -106,7 +133,7 @@ button{
 }
 
 /* ----------- developer section ------------ */
-#developer-section{
+#developer-section,#personal-section{
     background-image: url('./images/shape-1.png');
     background-repeat: no-repeat;
     background-size:20%;
@@ -114,13 +141,19 @@ button{
     background-position-y:45%;
     padding-bottom: 50px;
 }
-.developer-section{
+.developer-section, .personal-section{
     margin: 0;
     padding-left: 0;
 }
 .developer-section img{
    padding: 2rem 1rem;
    margin-left: 5rem;
+}
+.personal-section img{
+    border-radius: 10%;
+    width: 85%;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 .developer-section .global-community, h2{
     font-size: 2rem;
