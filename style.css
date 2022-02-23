@@ -8,17 +8,13 @@
     color: orange;
     font-size: 2.7rem;
 }
-.header-fancy{
-    padding-left: 1rem;
-    border-left: 5px solid lightsalmon;
-    border-top-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-h1{
+#fency-heading{
     color: darkblue;
     font-size: 3rem;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 1rem;
+    border-left: 4px solid #ff5959;
 }
 h4{
     margin-bottom: 20px;
@@ -44,27 +40,40 @@ p{
     width: 80%;
     margin-left: 5%;
 }
-.btn{
+button{
+    border: 0;
+    margin: 20px 0;
+}
+.fency-btn{
+    text-decoration: none;
     border: 1.5px solid lightgreen;
     padding: 13px 18px;
     background: linear-gradient(45deg,tomato , lightcoral);
-    margin: 20px 0;
     color: #fff;
     border-radius: 5px;
     font-size: 1rem;
     text-align: center;
     display: block;
     background-position: top;
+    outline: none;
 }
-
-#header-section {
+#header-section{
     background-image: url(./images/shape-4.png);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position-x: 81%;
-    background-position-y: 82%;
+    background-position-y: 50%;
+    padding-bottom: 5rem;
 }
-/* ---------- single box ---------- */
+
+/* ---------- mission section ---------- */
+#mission-section h1{
+    color: #111111;
+    text-align: center;
+    font-size: 2.7rem;
+    padding: 1rem 0 1.5rem 0;
+    margin-bottom: 2rem;
+}
 .single-box{
     height: 400px;
     height: 360px;
@@ -83,7 +92,7 @@ p{
     padding-left: 13px;
 }
 .single-card-details h3{
-    color: rgb(24, 24, 65);
+    color: darkblue;
     padding: 10px 0;
 }
 #mission{
@@ -97,6 +106,14 @@ p{
 }
 
 /* ----------- developer section ------------ */
+#developer-section{
+    background-image: url('./images/shape-1.png');
+    background-repeat: no-repeat;
+    background-size:20%;
+    background-position-x: left;
+    background-position-y:45%;
+    padding-bottom: 50px;
+}
 .developer-section{
     margin: 0;
     padding-left: 0;
@@ -106,16 +123,15 @@ p{
    margin-left: 5rem;
 }
 .developer-section .global-community, h2{
-    font-size: 2.7rem;
-    padding: 1rem 0;
-    margin-top: 3rem;
+    font-size: 2rem;
+    color: darkblue;
+    padding: 1.5rem 0;
+    margin-top: 5rem;
 }
-#developer-section{
-    background-image: url('./images/shape-1.png');
-    background-repeat: no-repeat;
-    background-size:20%;
-    background-position-x: left;
-    background-position-y:110px;
+.black-highlight{
+    color: #111;
+    font-size: 2.5rem;
+    display: block;
 }
 .global-community{
     padding: 2rem 1rem;
@@ -125,9 +141,45 @@ p{
     background-image: url('./images/shape-1.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:15%;
-    background-position-x: 99%;
-    background-position-y:98%;  
+    background-size:12%;
+    background-position-x: 97%;
+    background-position-y:87%;  
+    padding: 50px 0;
+}
+
+/* ------------contact me form ----------- */
+.contact-form{
+    text-align: center;
+}
+h4{
+    margin-top: -20px;
+    color: lightcoral;
+}
+.contact-box {
+    width: 500px;
+    background-color: rgb(119, 119, 119);
+    box-shadow: 0 0 20px 0 #999;
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 15px 0;
+}
+form{
+    margin: 35px;
+}
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    outline: none;
+}
+
+.textarea-filed {
+    height: 150px;
+    padding-top: 10px;
 }
 
 /* ----------footer part----------- */
